@@ -1,15 +1,15 @@
-package org.hometest.airalo.tests;
+package org.hometest.airalo.tests.ui;
 
-import org.hometest.airalo.BaseTest;
 import org.hometest.airalo.pages.HomePage;
 import org.hometest.airalo.pages.LocalESimsPage;
 import org.hometest.airalo.pages.PackageDetailsPage;
 import org.junit.Test;
 
-public class ValidateESimOptions extends BaseTest {
+public class ValidateESimOptions extends BaseUITest {
 
     @Test
     public void validateJapaneseOptionOne() {
+        System.out.println("running validateJapaneseOptionOne test");
         HomePage homePage = new HomePage();
         homePage.lunchApplication(prop.getProperty("app.url"));
         homePage.waitForPageToLoad();
